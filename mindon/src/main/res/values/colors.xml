@@ -1,0 +1,14 @@
+<resources>
+    <color name="sage_green">#B4C9B3</color> <!-- 메인 컬러 -->
+    <color name="moss_green">#78866B</color> <!-- 포인트 컬러 -->
+    <color name="soft_white">#F9F9F7</color> <!-- 배경 -->
+    <color name="charcoal_gray">#404040</color> <!-- 텍스트 -->
+    <color name="colorAccent">#FFA000</color> <!--강조 -->
+    <color name="moss_green_dark1">#5F6B56</color>
+    <color name="moss_green_dark2">#4E5A49</color>
+    <color name="forest_moss">#3F4D3C</color>
+    <color name="olive_moss">#6A775E</color>
+    <color name="muted_evergreen">#556650</color>
+    <color name="eucalyptus_blue">#A8C3BC</color>
+    <color name="olive_leaf">#9BAE95</color>
+</resources>

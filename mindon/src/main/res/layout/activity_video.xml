@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/soft_white"
+    android:padding="0dp">
+
+    <!-- 🔙 툴바 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sage_green"
+        android:title="마음위로 영상"
+        android:titleTextColor="@color/soft_white" />
+
+    <!-- 🔍 검색창 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="영상 키워드 입력"
+            android:padding="8dp"
+            android:background="@drawable/search_input_background" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/moss_green"
+            android:textColor="@color/soft_white"/>
+    </LinearLayout>
+
+    <!-- 🌱 추천 키워드 -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:id="@+id/keywordContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMeditation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="호흡 명상"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/eucalyptus_blue"
+                android:textColor="@color/charcoal_gray" />
+
+            <Button
+                android:id="@+id/btnSelfcare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="기분 좋아지는 플리"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/eucalyptus_blue"
+                android:textColor="@color/charcoal_gray" />
+
+            <Button
+                android:id="@+id/btnHealing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위로 모음"
+                android:backgroundTint="@color/eucalyptus_blue"
+                android:textColor="@color/charcoal_gray" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- 📺 영상 목록 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp"/>
+</LinearLayout>

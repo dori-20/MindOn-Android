@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/soft_white"
+    tools:context=".CenterFragment">
+
+    <!-- 검색창 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_box"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtLoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="경기도 시군을 입력해주세요"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/charcoal_gray"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:textSize="14sp"
+            android:backgroundTint="@color/moss_green"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"/>
+</LinearLayout>
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/category_array"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/community_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/sage_green"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp"
+        android:elevation="2dp"/>
+
+    <Button
+        android:id="@+id/btnFavoriteList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나의 센터"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/moss_green"
+        android:textColor="@color/soft_white"/>
+
+
+</LinearLayout>

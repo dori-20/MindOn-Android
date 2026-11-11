@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 알림 스위치 -->
+    <SwitchPreferenceCompat
+        android:key="receive_notifications"
+        android:title="알림 받기"
+        android:defaultValue="true" />
+
+    <!-- 감정일기 정렬 기준 -->
+    <ListPreference
+        android:key="emotion_sort_order"
+        android:title="감정일기 정렬 기준"
+        android:entries="@array/emotion_sort_labels"
+        android:entryValues="@array/emotion_sort_values"
+        android:defaultValue="latest" />
+
+    <!-- 감정일기 리마인더 알림 -->
+    <SwitchPreferenceCompat
+        android:key="daily_reminder_on"
+        android:title="감정일기 리마인더 알림 받기"
+        android:defaultValue="false" />
+
+    <!-- 알림 시간 설정 -->
+    <Preference
+        android:key="reminder_time"
+        android:title="알림 시간 설정"
+        android:summary="매일 알림 받을 시간을 설정하세요" />
+
+
+<!--    다시 시작했을떄 마지막 탭-->
+    <SwitchPreferenceCompat
+        android:key="remember_last_tab"
+        android:title="마지막으로 사용한 탭 기억하기"
+        android:defaultValue="true" />
+
+</PreferenceScreen>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/soft_white"
+    android:padding="32dp"
+    android:gravity="center_horizontal"
+    >
+
+    <!-- 타이틀 -->
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="회원가입"
+    android:textColor="#404040"
+    android:textSize="24sp"
+    android:layout_marginBottom="24dp"
+    android:textStyle="bold" />
+
+        <!-- 이메일 입력 -->
+    <EditText
+    android:id="@+id/signup_email"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="이메일 주소"
+    android:background="#EFEFEF"
+    android:padding="12dp"
+    android:textColor="#404040"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp"
+    android:inputType="textEmailAddress" />
+
+        <!-- 비밀번호 입력 -->
+    <EditText
+    android:id="@+id/signup_pw"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="비밀번호 (6자 이상)"
+    android:background="#EFEFEF"
+    android:padding="12dp"
+    android:textColor="#404040"
+    android:textSize="16sp"
+    android:layout_marginBottom="24dp"
+    android:inputType="textPassword" />
+
+        <!-- 가입 버튼 -->
+    <Button
+    android:id="@+id/signupBtn"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="가입하기"
+
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/moss_green" />
+
+    </LinearLayout>

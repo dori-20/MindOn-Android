@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B4C9B3"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <!-- 상단 아이콘 + 앱 이름 -->
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingBottom="40dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:contentDescription="앱 로고" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마음이 머무는 곳,심온"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="@color/moss_green_dark2"
+             />
+    </LinearLayout>
+
+    <!-- 로그인 입력 영역 -->
+    <EditText
+    android:id="@+id/et_email"
+    android:layout_width="280dp"
+    android:layout_height="50dp"
+    android:hint="ID (이메일)"
+    android:background="#F0F0F0"
+    android:padding="10dp"
+    android:textColor="#000000"
+    android:textSize="16sp"
+    android:layout_marginBottom="15dp" />
+
+    <EditText
+    android:id="@+id/et_password"
+    android:layout_width="280dp"
+    android:layout_height="50dp"
+    android:hint="PASSWORD"
+    android:inputType="textPassword"
+    android:background="#F0F0F0"
+    android:padding="10dp"
+    android:textColor="#000000"
+    android:textSize="16sp"
+    android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#B00020"
+        android:visibility="gone"
+        android:text="에러 메시지"
+        android:textSize="14dp"
+        android:layout_margin="10dp" />
+        <!-- 로그인 버튼 -->
+        <Button
+        android:id="@+id/btn_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="로그인"
+        android:backgroundTint="@color/moss_green_dark2"
+        android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp" />
+
+        <!-- 회원가입 버튼 -->
+        <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="회원가입"
+            android:textStyle="bold"
+        android:backgroundTint="@color/moss_green_dark2"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+        android:id="@+id/btn_google_signin"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/google_icon"
+        android:layout_marginRight="50dp"
+        android:contentDescription="구글 로그인" />
+        <ImageView
+            android:id="@+id/btn_kakao_login"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/kakao_icon"
+            android:contentDescription="카카오 로그인"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+    </LinearLayout>

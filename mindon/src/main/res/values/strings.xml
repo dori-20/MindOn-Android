@@ -1,0 +1,41 @@
+<resources>
+    <!-- …기존 정의들… -->
+    <string name="app_name">MindOn</string>
+    <string-array name="daily_messages">
+        <!--끌림, 내가 사랑한 유럽 TOP10 등등 in 책 영화-->
+        <item>청춘을 가만 두라. 흘러가는 대로. 혹은 그냥 닥치는 그대로.  </item>
+        <item>사랑해라, 사랑하고 있을 때만 당신은 비로소 당신이며, 아름다운 유일한 한 사람이다.</item>
+        <item>꿈이란 건 원래 현실적으로 생각하면 말도 안 되는 거라서 자신을 더 근사한 사람이 되도록 만드는 에너지라는 걸.</item>
+        <item>지친 마음에 작은 미소 하나를 선물해 보세요.</item>
+        <item>당신의 오늘이 누군가에게 큰 힘이 될 수 있습니다.</item>
+        <item>아무것도 하지 않아도 괜찮아. 존재하는 것만으로도 충분해.</item>
+        <item>상처 입은 곳에서 꽃이 피어난다.</item>
+        <item>인생은 폭풍이 지나가기를 기다리는 것이 아니라, 빗속에서도 춤추는 법을 배우는 것이다.</item>
+        <item>누군가의 하루가 당신으로 인해 부드러워졌다면, 그건 이미 충분히 잘 살아온 증거예요.</item>
+        <item>조금 천천히 가도 괜찮아. 너는 너의 속도로 충분히 아름다워.</item>
+        <item>가장 어두운 밤도 끝나고, 해는 떠오른다.</item>
+        <item>아무도 너의 속도를 재촉하지 않아. 쉬어가도 돼.</item>
+        <item>완벽하지 않아도 괜찮아. 노력하는 네가 참 대단해.</item>
+        <item>나를 가장 잘 안아줄 수 있는 사람은 결국 ‘나’예요.</item>
+        <item>오늘 하루도 수고 많았어요.
+        완벽하진 않아도 괜찮아요.
+        삶은 언제나 삐뚤빼뚤하게 흘러가니까요.
+        오늘의 기록은 당신의 용기의 증거예요.</item>
+        <item>오늘은 너를 위한 날이야.</item>
+        <item>어둠이 깊을수록 별은 더 밝게 빛난다.</item>
+        <item>가장 나다운 게 뭐냐고 묻는다면, 지금 이 모습이야.</item>
+        <item>우는 건 삶의 무게를 천천히 되새기게 도와줘.</item>
+        <item>사는 건 정말 거대한 모험이 될 거야.</item>
+        <item>난 나의 길을 가고 있어, 남들과는 달라도 괜찮아.</item>
+        <item>꽃은 피기 위해 애쓰지 않아요.
+                그저 자신의 때를 기다릴 뿐이죠.
+                우리도 그래요. 지금 이대로 충분해요.
+                – 나태주, 풀꽃</item>
+        <item>Never forget how much your family loves you.</item>
+        <item>The flower that blooms in adversity is the most rare and beautiful of all.</item>
+
+    </string-array>
+    <string name="open">드로어 열기</string>
+    <string name="close">드로어 닫기</string>>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

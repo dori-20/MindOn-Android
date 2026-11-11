@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="emotion_sort_labels">
+        <item>최신순</item>
+        <item>오래된순</item>
+        <item>감정순</item>
+    </string-array>
+
+    <string-array name="emotion_sort_values">
+        <item>latest</item>
+        <item>oldest</item>
+        <item>emotion</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>정신건강복지센터</item>
+        <item>정신의료기관</item>
+    </string-array>
+
+</resources>

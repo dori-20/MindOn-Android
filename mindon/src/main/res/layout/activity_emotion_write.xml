@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EmotionWriteActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/soft_white">
+
+        <!-- 뒤로가기 버튼 -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/returnbtn"
+            android:contentDescription="뒤로가기"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/charcoal_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp" />
+
+        <!-- 오늘의 기분 텍스트 -->
+        <TextView
+            android:id="@+id/textEmotionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오늘의 기분"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btnBack"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- 이모지 선택 -->
+        <LinearLayout
+            android:id="@+id/emojiRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/textEmotionLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/imgHappy"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/happy"
+                android:contentDescription="기쁨"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/imgSad"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/sad"
+                android:contentDescription="슬픔"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/imgSoso"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/soso"
+                android:contentDescription="그저 그럼"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView
+                android:id="@+id/imgAngry"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/angry"
+                android:contentDescription="화남"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <!-- 날짜 -->
+        <EditText
+            android:id="@+id/editDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            app:layout_constraintTop_toBottomOf="@id/emojiRow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- 감정 내용 -->
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:hint="내용을 입력하세요"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text"
+            app:layout_constraintTop_toBottomOf="@id/editDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- 저장 버튼 -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:backgroundTint="@color/moss_green"
+            app:layout_constraintTop_toBottomOf="@id/editContent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

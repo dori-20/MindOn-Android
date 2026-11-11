@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F7"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+<TextView
+android:id="@+id/tvTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="오늘의 메시지"
+android:textSize="24sp"
+android:textStyle="bold"
+android:textColor="#404040"
+android:layout_gravity="center"
+android:layout_marginTop="30dp"
+android:layout_marginBottom="16dp"/>
+
+    <!-- 메시지 박스 (Rectangle) -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#E7EAE6"
+    android:padding="24dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="40dp"
+    android:layout_marginTop="15dp"
+    android:elevation="2dp"
+    android:backgroundTint="#E7EAE6"
+    android:backgroundTintMode="src_in"
+    android:clipToOutline="true"
+    android:layout_gravity="center_horizontal"
+    android:radius="12dp">
+
+    <com.example.mindon.custom.TypeWriterTextView
+        android:id="@+id/tvDailyMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#404040"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_margin="16dp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:id="@+id/btnEmotion"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:text="오늘의 감정기록"
+        android:textSize="20dp"
+        android:layout_margin="7dp"
+        android:backgroundTint="@color/moss_green"
+        android:textColor="@color/soft_white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCenter"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:text="센터 위치 알아보기"
+        android:textSize="20dp"
+        android:layout_margin="7dp"
+        android:backgroundTint="@color/moss_green"
+        android:textColor="@color/soft_white"
+
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCommunity"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:textSize="20dp"
+        android:text="고민 커뮤니티"
+        android:layout_margin="7dp"
+        android:backgroundTint="@color/moss_green"
+        android:textColor="@color/soft_white"
+       />
+    <Button
+        android:id="@+id/btnShowGraph"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:text="나의 감정 그래프"
+        android:textSize="20dp"
+        android:layout_margin="7dp"
+        android:backgroundTint="@color/moss_green"
+        android:textColor="@color/soft_white"/>
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:text="Healing Playlist"
+        android:textSize="20dp"
+        android:backgroundTint="@color/moss_green"
+        android:textColor="@color/soft_white"
+        android:layout_margin="7dp"/>
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:text="자가 진단 테스트"
+        android:textSize="20dp"
+        android:backgroundTint="@color/moss_green"
+        android:textColor="@color/soft_white"
+        android:layout_margin="7dp"/>
+</LinearLayout>
+    </LinearLayout>
